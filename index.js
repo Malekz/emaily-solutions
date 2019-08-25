@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cookieSession = require("cookie-session");
-const passport = require("passport");
+//const cookieSession = require("cookie-session");
 const keys = require("./config/keys");
 require("./models/User");
 require("./services/passport");
@@ -9,16 +8,6 @@ require("./services/passport");
 mongoose.connect(keys.mongoURI, { userNewUrlParser: true });
 
 const app = express();
-
-app.use(
-  cookieSession({
-    maxAge: 30 * 24 * 60 * 60 * 1000,
-    keys: [keys.cookiekey]
-  })
-);
-
-app.use(passport.initialize());
-app.use(passport.session());
 
 require("./routes/authRoutes")(app);
 // https://sleepy-fortress-88962.herokuapp.com/
