@@ -17,6 +17,9 @@ app.use(
   })
 );
 
+app.use(passport.initialize());
+app.use(passport.session());
+
 require("./routes/authRoutes")(app);
 // https://sleepy-fortress-88962.herokuapp.com/
 
