@@ -14,3 +14,9 @@ async (accessToken, refreshToken, profile, done) => {
     return done(null, existingUser);
   }
   */
+
+export const handleToken = token => async dispatch => {
+  const res = await axios.post("/api/stripe", token);
+
+  dispatch({ type: FETCH_USER, payload: res.data });
+};
