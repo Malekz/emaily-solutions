@@ -20,6 +20,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require("./routes/authRoutes")(app);
+require("./routes/billingRoutes")(app);
+/*
+this top require stetments will turn into functions which we then immediately call whith the express App object/
+*/
+
 // https://sleepy-fortress-88962.herokuapp.com/
 
 const PORT = process.env.PORT || 5000;
