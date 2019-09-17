@@ -13,7 +13,8 @@ module.exports = app => {
       body,
       recipients: recipients.split(",").map(email => {
         email;
-      })
+      }),
+      _user: req.user.id
     });
   });
 };
