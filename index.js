@@ -25,6 +25,7 @@ app.use(passport.session());
 
 require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app);
+require("./routes/surveyRoutes")(app);
 /*
 this top require stetments will turn into functions which we then immediately call whith the express App object/
 */
