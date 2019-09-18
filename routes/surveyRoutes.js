@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const requireLogin = require("../middlewares/requireLogin");
-
+const Mailer = require("../services/Mailer");
 const requireCredits = require("../middlewares/requireCredits");
+const surveyTemplate = require("../services/emailTemplates/surveyTemplate");
 const Survey = mongoose.model("surveys");
 module.exports = app => {
   // we are saying here is " if anyone makes a post request to api/surveys, then first make sure that the user is logged in and then if they have enough credit and only then you can finally create a campaign or do whatever logic you want to do."
@@ -16,5 +17,7 @@ module.exports = app => {
       _user: req.user.id,
       dateSent: Date.now()
     });
+    // great place to send an email!
+    const mailer = new Mailer(survey, surveyTemplate(survey));
   });
 };
