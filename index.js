@@ -1,4 +1,3 @@
-// the root server file
 const express = require("express");
 const mongoose = require("mongoose");
 const cookieSession = require("cookie-session");
@@ -9,7 +8,8 @@ require("./models/User");
 require("./models/Survey");
 require("./services/passport");
 
-mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
+mongoose.Promise = global.Promise;
+mongoose.connect(keys.mongoURI);
 
 const app = express();
 
@@ -26,9 +26,6 @@ app.use(passport.session());
 require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app);
 require("./routes/surveyRoutes")(app);
-/*
-this top require stetments will turn into functions which we then immediately call whith the express App object/
-*/
 
 if (process.env.NODE_ENV === "production") {
   // Express will serve up production assets
@@ -36,16 +33,12 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 
   // Express will serve up the index.html file
-  // if it doesn't recognise the route
+  // if it doesn't recognize the route
   const path = require("path");
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 
-// https://sleepy-fortress-88962.herokuapp.com/
-
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
-
-//http://localhost:5000/
