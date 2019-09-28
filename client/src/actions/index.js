@@ -3,20 +3,19 @@ import { FETCH_USER } from "./types";
 
 export const fetchUser = () => async dispatch => {
   const res = await axios.get("/api/current_user");
+
   dispatch({ type: FETCH_USER, payload: res.data });
 };
-
-/*
-async (accessToken, refreshToken, profile, done) => {
-  const existingUser = await User.findOne({ googleId: profile.id });
-  if (existingUser) {
-    // we already have a record with thw given profile ID
-    return done(null, existingUser);
-  }
-  */
 
 export const handleToken = token => async dispatch => {
   const res = await axios.post("/api/stripe", token);
 
+  dispatch({ type: FETCH_USER, payload: res.data });
+};
+
+export const submitSurvey = (values, history) => async dispatch => {
+  const res = await axios.post("/api/surveys", values);
+
+  history.push("/surveys");
   dispatch({ type: FETCH_USER, payload: res.data });
 };
