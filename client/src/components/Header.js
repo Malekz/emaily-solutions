@@ -2,6 +2,8 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Payments from "./Payments";
+import { Navbar, Nav } from "react-bootstrap";
+
 class Header extends Component {
   renderContent() {
     switch (this.props.auth) {
@@ -9,40 +11,46 @@ class Header extends Component {
         return;
       case false:
         return (
-          <li>
-            <a href="/auth/google">Login With Google</a>
-          </li>
+          <Nav.Link as="li">
+            {" "}
+            <a href="/auth/google"> Login </a>
+          </Nav.Link>
         );
 
       default:
         return (
           <Fragment>
-            <li key="1">
+            <Nav.Link as="li">
               <Payments />
-            </li>
-            <li key="2" style={{ margin: "0 10px " }}>
+            </Nav.Link>
+            <Nav.Link as="li" style={{ color: "white" }}>
               Credits: {this.props.auth.credits}
-            </li>
-            <li key="3">
-              <a href="/api/logout">Logout</a>
-            </li>
+            </Nav.Link>
+            <Nav.Link as="li">
+              <a className="my-hover" href="/api/logout">
+                Log Out
+              </a>
+            </Nav.Link>
           </Fragment>
         );
     }
   }
   render() {
     return (
-      <nav>
-        <div className="nav-wrapper">
-          <Link
-            to={this.props.auth ? "/surveys" : "/"}
-            className="left brand-logo"
-          >
-            Emaily
-          </Link>
-          <ul className="right">{this.renderContent()}</ul>
-        </div>
-      </nav>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand>
+          <Link to={this.props.auth ? "/surveys" : "/"}>Emaily Solutions</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse
+          className="justify-content-end"
+          id="responsive-navbar-nav"
+        >
+          <Nav>
+            <Nav.Item as="ul">{this.renderContent()}</Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }

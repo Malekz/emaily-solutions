@@ -6,6 +6,7 @@ import { createStore, applyMiddleware } from "redux";
 import reduxThunk from "redux-thunk";
 import App from "./components/App";
 import reducers from "./reducers";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Development only axios helpers!
 import axios from "axios";
