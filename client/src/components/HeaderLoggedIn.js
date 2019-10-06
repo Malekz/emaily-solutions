@@ -47,7 +47,9 @@ class HeaderLoggedIn extends React.Component {
             </div>
 
             <a>
-              <span className="name white-text">iFeedback Corp © 2019</span>
+              <span className="name white-text">
+                Emaily Solutions Corp © 2019
+              </span>
             </a>
             <a>
               <span className="name white-text">
@@ -103,7 +105,7 @@ class HeaderLoggedIn extends React.Component {
           <div className="container">
             <div className="nav-wrapper">
               <Link to="/dashboard" className="brand-logo">
-                iFeedback
+                EmailySolutions
               </Link>
               <a
                 href="#"
