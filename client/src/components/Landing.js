@@ -1,89 +1,161 @@
 import React from "react";
-import { Jumbotron, Button } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faComments,
-  faBullhorn,
-  faTree
-} from "@fortawesome/free-solid-svg-icons";
-
-const comments = (
-  <FontAwesomeIcon className="p-4" icon={faComments} size="9x" />
-);
-const bullhorn = (
-  <FontAwesomeIcon className="p-4" icon={faBullhorn} size="9x" />
-);
-const tree = <FontAwesomeIcon className="p-4" icon={faTree} size="9x" />;
 
 const Landing = () => {
   return (
-    <div>
-      <Jumbotron style={{ backgroundColor: "yellow" }} className="center">
-        <h1 className="font-weight-bold pb-5">
-          Remove the pain out of campaigning!
-        </h1>
-        <h3 className="pb-5">
-          Get started with the future of campaigning with a smarter all-in-one
-          marketing platform.
-        </h3>
-        <p>
-          <Button
-            href="/auth/google"
-            size="lg"
-            style={{
-              backgroundColor: "#343a40",
-              fontSize: "25px",
-              paddingBottom: "40px"
-            }}
-          >
-            Sign up
-          </Button>
-        </p>
-      </Jumbotron>
-      <div className="container">
-        <h2 className="center">
-          What you can do with <br />
-          Emaily Solutions
-        </h2>
-        <div className="row center">
-          <div className="col-md-4">
-            {comments}
-            <h3>Create unique campaigns</h3>
-            <p>Spread the word however you like and with whomever you like.</p>
-          </div>
-          <div className="col-md-4">
-            {bullhorn}
-            <h3>Reach your audience</h3>
-            <p>Know who you're talking so you can say the right things.</p>
-          </div>
-          <div className="col-md-4">
-            {tree}
-            <h3>Turn data into insights</h3>
-            <p>
-              Identify actionable next steps from your data and optimise your
-              efforts.
-            </p>
+    <React.Fragment>
+      <section className="section section-icons center">
+        <div className="container">
+          <div className="row scrollspy" id="about">
+            <div className="col s12 m4">
+              <div className="card-panel">
+                <i className="fa fa-user fa-3x deep-purple-text text-darken-2" />
+                <h5 className="grey-text text-darken-4">Free Account</h5>
+                <p>
+                  Create an account and start using Emaily Solutions now to
+                  boost your product sales.
+                </p>
+              </div>
+            </div>
+            <div className="col s12 m4">
+              <div className="card-panel">
+                <i className="fa fa-database fa-3x deep-purple-text text-darken-2" />
+                <h5 className="grey-text text-darken-4">NoSQL Databases</h5>
+                <p>
+                  We use MongoDB for large volumes of structured and
+                  non-structured data.
+                </p>
+              </div>
+            </div>
+            <div className="col s12 m4">
+              <div className="card-panel">
+                <i className="fa fa-envelope fa-3x deep-purple-text text-darken-2" />
+                <h5 className="grey-text text-darken-4">Fast Conections</h5>
+                <p>
+                  We use SendGrid API trusted by developers and marketers for
+                  time-savings and delivery expertise.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <p
-          style={{
-            width: "200px",
-            fontSize: "30px",
-            margin: "auto",
-            textAlign: "center",
-            backgroundColor: "#343a40",
-            padding: "5px 10px"
-          }}
-        >
-          <a
-            style={{ textDecoration: "none", color: "white" }}
-            href="/auth/google"
-          >
-            Sign up
-          </a>
-        </p>
-      </div>
-    </div>
+      </section>
+
+      <section className="section section-developers white-text">
+        <div className="primary-overlay valign-wrapper">
+          <div className="container">
+            <div className="row">
+              <div className="col s12 center">
+                <h4>For Managers, By Developers</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-language grey lighten-4">
+        <div className="container">
+          <div className="row">
+            <h5 className="center">
+              Over{" "}
+              <span className="deep-purple-text text-darken-1">
+                15,000 customers
+              </span>{" "}
+              trust Emaily Solutions to send more than 45 million emails every
+              month.
+            </h5>
+            <br />
+            <br />
+            <div className="row">
+              <div className="col s3 l2">
+                <img
+                  src="/images/square.png"
+                  className="responsive-img"
+                  alt=""
+                />
+              </div>
+              <div className="col s3 l2">
+                <img
+                  src="../images/wallmart.png"
+                  className="responsive-img"
+                  alt=""
+                />
+              </div>
+              <div className="col s3 l2">
+                <img
+                  src="../images/shadow.png"
+                  className="responsive-img"
+                  alt=""
+                />
+              </div>
+
+              <div className="col s3 l2">
+                <img
+                  src="../images/jpmorgan.png"
+                  className="responsive-img"
+                  alt=""
+                />
+              </div>
+              <div className="col l2 hide-on-med-and-down">
+                <img
+                  src="../images/lasso.png"
+                  className="responsive-img"
+                  alt=""
+                />
+              </div>
+              <div className="col l2 hide-on-med-and-down">
+                <img
+                  src="../images/bosch.png"
+                  className="responsive-img"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section location white-text">
+        <div className="primary-overlay ">
+          <div className="container">
+            <div className="row scrollspy" id="contact">
+              <div className="col s6">
+                <h5>Location</h5>
+                <ul>
+                  <li>Emaily Solutions, INC</li>
+                  <li> Hüttenstr. 19, Dinslaken</li>
+                  <li> Germany</li>
+                </ul>
+              </div>
+              <div className="col s4 offset-s2">
+                <h5 className="white-text">Links</h5>
+                <ul>
+                  <li>
+                    <a
+                      href="https://zarzour.de"
+                      target="_blank"
+                      className="white-text"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa fa-address-card" /> Portfolio
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Malekz"
+                      target="_blank"
+                      className="white-text"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa fa-github-square" /> Github
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </React.Fragment>
   );
 };
 
