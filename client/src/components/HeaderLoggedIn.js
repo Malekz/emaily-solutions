@@ -70,10 +70,10 @@ class HeaderLoggedIn extends React.Component {
           </Link>
         </li>
         <li>
-          <a href="/credits" className="sidenav-close">
-            <i className="sidenav-margin material-icons">attach_money</i>
-            Credits
-          </a>
+          <Link to="/credits" className="sidenav-close">
+            <i className="sidenav-margin  material-icons">attach_money</i>
+            Surveys
+          </Link>
         </li>
         <li>
           <Link to="/surveys" className="sidenav-close">
