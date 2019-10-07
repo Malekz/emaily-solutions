@@ -72,7 +72,7 @@ class HeaderLoggedIn extends React.Component {
         <li>
           <Link to="/credits" className="sidenav-close">
             <i className="sidenav-margin  material-icons">attach_money</i>
-            Surveys
+            Credits
           </Link>
         </li>
         <li>
