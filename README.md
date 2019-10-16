@@ -19,7 +19,7 @@ App uses SendGrid API to create emails, Stripe API to mock payments which are re
 
 # Stack
 
-## Backend
+### Backend
 
 * The backend of this project uses Express and MongoDB. Mongo is a No-SQL database.
 * Backend provides API to connect with our React front-end application. Each route has a validator to check and validate before persisting to the database.
@@ -30,7 +30,7 @@ App uses SendGrid API to create emails, Stripe API to mock payments which are re
  * Passport Google OAuth 2.0 : View Documentation
  * Passport Facebook : View Documentation
 
-## Front End
+### Front End
 
 * The Front End of the application uses React.JS.
 * App uses Redux for state management and tracks authenticated users, user details and Surveys created by the user.
@@ -38,7 +38,7 @@ App uses SendGrid API to create emails, Stripe API to mock payments which are re
 * App uses Layout components to display public and private content depending upon user authentication state.
 * App uses Materialize.CSS for simplistic and responsive view. App works on several screen sizes including large like * * Monitors, medium like Tablets and small like mobile devices.
 
-## App is built using the following tech stack :
+### App is built using the following tech stack :
 
 * Axios
 * Express
