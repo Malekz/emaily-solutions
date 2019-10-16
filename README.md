@@ -2,7 +2,7 @@
 
 Demo https://emaily-solutions.herokuapp.com/
 
-# emaily-solutions
+# Description
 
 Full Stack App using MERN (Mongo, Express, React, Node) Stack used to create Surveys and send them to single/multiple email addresses.
 
