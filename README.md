@@ -16,3 +16,5 @@ App uses SendGrid API to create emails, Stripe API to mock payments which are re
 ..*Fill out the Survey Form and send to the desired email addresses.
 ..*Customers (people receiving Survey emails), can respond to the Survey through a Yes/No option from the email.
 ..*To track all the Surveys, navigate to the Surveys tab. Users can view details of any Survey and get to know how many customers have responded to the Surveys.
+
+⋅⋅* Unordered sub-list. 
