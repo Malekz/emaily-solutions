@@ -10,9 +10,9 @@ App uses SendGrid API to create emails, Stripe API to mock payments which are re
 
 # Instructions
 
-*Login using your preferred method.
-*App requires users to maintain a credit balance. Add Credits upon login on the Credits page.
-*Click on the red + icon on the bottom right side of the screen to create a new Survey.
-*Fill out the Survey Form and send to the desired email addresses.
-*Customers (people receiving Survey emails), can respond to the Survey through a Yes/No option from the email.
-*To track all the Surveys, navigate to the Surveys tab. Users can view details of any Survey and get to know how many customers have responded to the Surveys.
+..*Login using your preferred method.
+..*App requires users to maintain a credit balance. Add Credits upon login on the Credits page.
+..*Click on the red + icon on the bottom right side of the screen to create a new Survey.
+..*Fill out the Survey Form and send to the desired email addresses.
+..*Customers (people receiving Survey emails), can respond to the Survey through a Yes/No option from the email.
+..*To track all the Surveys, navigate to the Surveys tab. Users can view details of any Survey and get to know how many customers have responded to the Surveys.
