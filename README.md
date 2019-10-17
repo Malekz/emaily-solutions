@@ -31,7 +31,7 @@ App uses SendGrid API to create emails, Stripe API to mock payments which are re
 * App uses StripePayment API to mock payments. This project is designed for learning purposes therefore No real payments are accepted. Stripe provides a test credit card number (4242 4242 4242 4242) to be used on the credits payments page. Once a user has enough credits, the user can now start sending Surveys. Each Survey costs 1 credit.
 * Authentication is supported by Passport.JS that uses the following Strategies
  * Passport Google OAuth 2.0 : [View Documentation](http://www.passportjs.org/packages/passport-google-oauth20/)
- * Passport Facebook : [View Documentation](https://www.google.com)
+ * Passport Facebook : [View Documentation](http://www.passportjs.org/packages/passport-facebook/)
 
 #### Front End
 
