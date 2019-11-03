@@ -9,7 +9,7 @@ Full Stack App using MERN (Mongo, Express, React, Node) Stack used to create Sur
 
 App uses SendGrid API to create emails, Stripe API to mock payments which are required to purchase credits. These credits are used to create new Surveys.
 
-The app uses a demo stripe account where adding a credit card and paying money is actually not real but mocking a real life payment when the stripe acount is being upgraded
+The app uses a demo stripe account where adding a credit card and paying money is actually not real but mocking a real life payment when the stripe acount is being upgraded to a premium one.
 
 
 
