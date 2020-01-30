@@ -26,7 +26,7 @@ The app uses a demo stripe account where adding a credit card and paying money i
 ## Tech Stack
 --------
 
-#### Backend
+#### Backend Side
 
 * The backend of this project uses Express and MongoDB. Mongo is a No-SQL database.
 * Backend provides API to connect with our React front-end application. Each route has a validator to check and validate before persisting to the database.
