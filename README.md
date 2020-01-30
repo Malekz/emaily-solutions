@@ -37,7 +37,7 @@ The app uses a demo stripe account where adding a credit card and paying money i
  * Passport Google OAuth 2.0 : [View Documentation](http://www.passportjs.org/packages/passport-google-oauth20/)
  * Passport Facebook : [View Documentation](http://www.passportjs.org/packages/passport-facebook/)
 
-#### Front End
+#### Front End Side
 
 * The Front End of the application uses React.JS.
 * App uses Redux for state management and tracks authenticated users, user details and Surveys created by the user.
