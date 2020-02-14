@@ -45,7 +45,7 @@ The app uses a demo stripe account where adding a credit card and paying money i
 * App uses Layout components to display public and private content depending upon user authentication state.
 * App uses Materialize.CSS for simplistic and responsive view. App works on several screen sizes including large like * * Monitors, medium like Tablets and small like mobile devices.
 
-#### App is built using the following tech stack :
+#### App is built using the following tech stack:
 
 * Axios
 * Express
