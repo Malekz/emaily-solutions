@@ -49,7 +49,7 @@ The app uses a demo stripe account where adding a credit card and paying money i
 
 * Axios
 * Express
-* Font Awesome
+* Font Awesome.
 * Heroku.
 * Google OAuth.
 * Materialize CSS.
