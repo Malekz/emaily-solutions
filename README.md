@@ -52,7 +52,7 @@ The app uses a demo stripe account where adding a credit card and paying money i
 * Font Awesome
 * Heroku
 * Google OAuth
-* Materialize CSS
+* Materialize CSS.
 * Mongo DB.
 * React.JS.
 * Redux State Management.
