@@ -57,5 +57,5 @@ The app uses a demo stripe account where adding a credit card and paying money i
 * React.JS.
 * Redux State Management.
 * SendGrid API.
-* Stripe Payment API.
+* Stripe Payment API
 * App is developed with Prod and Dev environments
