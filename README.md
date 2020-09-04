@@ -54,7 +54,7 @@ The app uses a demo stripe account where adding a credit card and paying money i
 * Google OAuth.
 * Materialize CSS.
 * Mongo DB.
-* React.JS.
+* React.JS
 * Redux State Management
 * SendGrid API
 * Stripe Payment API
