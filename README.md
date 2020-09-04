@@ -48,7 +48,7 @@ The app uses a demo stripe account where adding a credit card and paying money i
 #### App is built using the following tech stack:
 
 * Axios.
-* Express.
+* Express
 * Font Awesome
 * Heroku
 * Google OAuth
